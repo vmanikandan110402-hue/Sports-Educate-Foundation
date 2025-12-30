@@ -10,7 +10,6 @@ import Coaches from "./pages/Coaches";
 import Gallery from "./pages/Gallery";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -28,7 +27,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Index />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
