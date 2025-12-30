@@ -12,21 +12,21 @@ import coach2 from "@/assets/coach-2.jpg";
 import coach3 from "@/assets/coach-3.jpg";
 
 const images = [
-  { src: gallery1, category: "Training", title: "Football Practice Session" },
-  { src: gallery2, category: "Training", title: "Basketball Court Action" },
-  { src: gallery3, category: "Fitness", title: "Strength Training" },
-  { src: gallery4, category: "Matches", title: "Cricket Match Day" },
-  { src: heroImage, category: "Training", title: "Team Drills" },
-  { src: coach1, category: "Coaches", title: "Expert Coaching" },
-  { src: coach2, category: "Coaches", title: "Personal Training" },
-  { src: coach3, category: "Coaches", title: "Strategy Session" },
-  { src: gallery1, category: "Events", title: "Championship Finals" },
-  { src: gallery2, category: "Events", title: "Award Ceremony" },
-  { src: gallery3, category: "Fitness", title: "Group Workout" },
-  { src: gallery4, category: "Matches", title: "Tournament Day" },
+  { src: gallery1, category: "School Programs", title: "PE Class in Action" },
+  { src: gallery2, category: "Teacher Training", title: "Educators Workshop" },
+  { src: gallery3, category: "Student Activities", title: "Fitness Assessment" },
+  { src: gallery4, category: "School Events", title: "Inter-School Competition" },
+  { src: heroImage, category: "School Programs", title: "Team Building Activities" },
+  { src: coach1, category: "Teacher Training", title: "Professional Development" },
+  { src: coach2, category: "Student Activities", title: "After-School Sports" },
+  { src: coach3, category: "Teacher Training", title: "Curriculum Planning" },
+  { src: gallery1, category: "School Events", title: "Annual Sports Day" },
+  { src: gallery2, category: "Student Activities", title: "Multi-Sport Exposure" },
+  { src: gallery3, category: "School Programs", title: "Physical Education Class" },
+  { src: gallery4, category: "School Events", title: "Championship Ceremony" },
 ];
 
-const categories = ["All", "Training", "Matches", "Fitness", "Events", "Coaches"];
+const categories = ["All", "School Programs", "Teacher Training", "Student Activities", "School Events"];
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");

@@ -61,9 +61,9 @@ const HeroSection = () => (
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold text-background leading-tight mb-6"
         >
-          Unlock Your{" "}
-          <span className="text-primary">Athletic</span>{" "}
-          Potential
+          Empowering Schools,{" "}
+          <span className="text-primary">Building</span>{" "}
+          Champions
         </motion.h1>
 
         <motion.p
@@ -72,9 +72,7 @@ const HeroSection = () => (
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-background/80 mb-10 max-w-xl"
         >
-          World-class training, expert coaches, and state-of-the-art facilities 
-          to transform you into a champion. Join thousands of athletes who have 
-          achieved greatness with us.
+          Sports Educate Foundation collaborates with schools to implement best-in-class physical education programs that enhance children's fitness, academic performance, and overall development.
         </motion.p>
 
         <motion.div
@@ -259,13 +257,11 @@ const WhyChooseUsSection = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-background/20 text-background text-sm font-semibold mb-4">
               Why SportElite?
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-background leading-tight mb-6">
-              The Difference That Makes Champions
-            </h2>
-            <p className="text-background/80 text-lg mb-8">
-              We don't just train athletes—we develop champions. Our holistic approach 
-              combines physical training with mental conditioning, nutrition guidance, 
-              and personalized coaching.
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background leading-tight mb-6">
+              Empowering Schools, Building Champions
+            </h1>
+            <p className="text-xl text-background/80 mb-8 max-w-2xl">
+              Sports Educate Foundation collaborates with schools to implement best-in-class physical education programs that enhance children's fitness, academic performance, and overall development.
             </p>
 
             <ul className="space-y-4">

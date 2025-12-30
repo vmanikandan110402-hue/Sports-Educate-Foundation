@@ -40,19 +40,16 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary text-sm font-semibold mb-4">
-                About Us
+                Our Mission
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background leading-tight mb-6">
-                Shaping Champions Since 2009
+                Empowering Schools Through Physical Education
               </h1>
               <p className="text-lg text-background/70 mb-6">
-                At SportElite Academy, we believe every athlete has the potential to achieve greatness. 
-                Our mission is to unlock that potential through world-class coaching, cutting-edge 
-                training methods, and an unwavering commitment to excellence.
+                Sports Educate Foundation collaborates with schools to implement best-in-class physical education and sports programs. These programs significantly enhance children's fitness levels and contribute greatly to their overall development, including personal, physical, and social skills.
               </p>
               <p className="text-background/70">
-                Founded by former professional athletes and sports scientists, we've dedicated over 
-                15 years to developing champions across multiple sports disciplines.
+                The benefits extend beyond physical health, helping children boost their concentration, commitment, and self-esteem, which leads to higher attendance, positive behaviour, and academic attainment.
               </p>
             </motion.div>
 
@@ -151,31 +148,26 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <SectionHeader
-                badge="Our Approach"
-                title="Coach-Driven Excellence"
-                subtitle=""
-                centered={false}
-              />
-              <p className="text-muted-foreground mb-6">
-                Our philosophy centers on the coach-athlete relationship. We believe that every 
-                champion is built through personalized attention, consistent guidance, and a 
-                deep understanding of each athlete's unique strengths and areas for growth.
+              <h3 className="text-3xl font-bold text-foreground mb-6">Our Philosophy</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Sports Educate Foundation collaborates with schools to implement best-in-class physical education and sports programs. These programs significantly enhance children's fitness levels and contribute greatly to their overall development, including personal, physical, and social skills.
               </p>
-              <ul className="space-y-4">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                The benefits extend beyond physical health, helping children boost their concentration, commitment, and self-esteem, which leads to higher attendance, positive behaviour, and academic attainment.
+              </p>
+              <div className="space-y-4">
                 {[
-                  "Personalized training plans for every athlete",
-                  "Regular performance assessments and feedback",
-                  "Mental conditioning and sports psychology",
-                  "Nutrition guidance and recovery protocols",
-                  "Video analysis and technique refinement",
+                  "Holistic development through sports",
+                  "Enhanced academic performance",
+                  "Improved social skills and teamwork",
+                  "Lifelong health and wellness habits"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                  <div key={i} className="flex items-center gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary" />
                     <span className="text-foreground">{item}</span>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </motion.div>
 
             <motion.div
