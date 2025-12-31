@@ -48,8 +48,10 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-lg text-muted-foreground">
-              Have questions about our programs or want to enroll? Reach out to us 
-              and our team will get back to you within 24 hours.
+              For world-class physical education, get in touch with our experts.
+              We are pleased to help you in all possible ways. So without more
+              outlying delay, connect with us over a call or fill out the given
+              enquiry form now.
             </p>
           </motion.div>
         </div>
@@ -66,7 +68,9 @@ const Contact = () => {
               viewport={{ once: true }}
               className="lg:col-span-3 bg-card rounded-2xl p-8 shadow-sm"
             >
-              <h2 className="text-2xl font-bold text-foreground mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-6">
+                Send Us a Message
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -77,7 +81,9 @@ const Contact = () => {
                       type="text"
                       required
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                       placeholder="John Doe"
                     />
@@ -90,7 +96,9 @@ const Contact = () => {
                       type="email"
                       required
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                       placeholder="john@example.com"
                     />
@@ -105,7 +113,9 @@ const Contact = () => {
                     <input
                       type="tel"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                       placeholder="+1 (234) 567-890"
                     />
@@ -117,7 +127,9 @@ const Contact = () => {
                     <select
                       required
                       value={formData.subject}
-                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, subject: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
                     >
                       <option value="">Select a subject</option>
@@ -138,13 +150,20 @@ const Contact = () => {
                     required
                     rows={5}
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors resize-none"
                     placeholder="Tell us about your inquiry..."
                   />
                 </div>
 
-                <Button type="submit" variant="accent" size="xl" className="w-full">
+                <Button
+                  type="submit"
+                  variant="accent"
+                  size="xl"
+                  className="w-full"
+                >
                   Send Message <Send className="h-5 w-5" />
                 </Button>
               </form>
@@ -159,7 +178,9 @@ const Contact = () => {
             >
               {/* Info Cards */}
               <div className="bg-foreground rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-background mb-6">Contact Information</h3>
+                <h3 className="text-xl font-bold text-background mb-6">
+                  Contact Information
+                </h3>
                 <div className="space-y-6">
                   {contactInfo.map((info, i) => (
                     <div key={i} className="flex gap-4">
@@ -167,9 +188,14 @@ const Contact = () => {
                         <info.icon className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <div className="text-sm text-background/60 mb-1">{info.label}</div>
+                        <div className="text-sm text-background/60 mb-1">
+                          {info.label}
+                        </div>
                         {info.href ? (
-                          <a href={info.href} className="text-background hover:text-primary transition-colors">
+                          <a
+                            href={info.href}
+                            className="text-background hover:text-primary transition-colors"
+                          >
                             {info.value}
                           </a>
                         ) : (
@@ -182,7 +208,9 @@ const Contact = () => {
 
                 {/* Social Links */}
                 <div className="mt-8 pt-6 border-t border-background/10">
-                  <div className="text-sm text-background/60 mb-4">Follow Us</div>
+                  <div className="text-sm text-background/60 mb-4">
+                    Follow Us
+                  </div>
                   <div className="flex gap-3">
                     {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
                       <a
@@ -199,7 +227,9 @@ const Contact = () => {
 
               {/* Quick Actions */}
               <div className="bg-primary rounded-2xl p-8">
-                <h3 className="text-xl font-bold text-primary-foreground mb-4">Quick Actions</h3>
+                <h3 className="text-xl font-bold text-primary-foreground mb-4">
+                  Quick Actions
+                </h3>
                 <div className="space-y-3">
                   <a
                     href="tel:+916374173855"

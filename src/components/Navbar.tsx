@@ -71,8 +71,8 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="accent" size="lg">
-              Join Now
+            <Button variant="accent" size="lg" asChild>
+              <Link to="/contact">Join Now</Link>
             </Button>
           </div>
 
@@ -111,8 +111,8 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button variant="accent" className="mt-2 w-full">
-                Join Now
+              <Button variant="accent" className="mt-2 w-full" asChild>
+                <Link to="/contact">Join Now</Link>
               </Button>
             </div>
           </motion.div>

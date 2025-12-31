@@ -40,15 +40,15 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary text-sm font-semibold mb-4">
-                Our Mission
+                About Us
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background leading-tight mb-6">
-                Empowering Schools Through Physical Education
+                Sports Educate Foundation
               </h1>
-              <p className="text-lg text-background/70 mb-6">
+              <p className="text-lg text-background/70 mb-6 text-justify">
                 Sports Educate Foundation collaborates with schools to implement best-in-class physical education and sports programs. These programs significantly enhance children's fitness levels and contribute greatly to their overall development, including personal, physical, and social skills.
               </p>
-              <p className="text-background/70">
+              <p className="text-background/70 text-justify">
                 The benefits extend beyond physical health, helping children boost their concentration, commitment, and self-esteem, which leads to higher attendance, positive behaviour, and academic attainment.
               </p>
             </motion.div>

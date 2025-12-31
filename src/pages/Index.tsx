@@ -236,12 +236,13 @@ const ProgramsSection = () => {
 // Why Choose Us Section
 const WhyChooseUsSection = () => {
   const reasons = [
-    "Certified professional coaches with international experience",
-    "Personalized training programs for individual goals",
-    "Modern equipment and world-class facilities",
-    "Proven track record with champion athletes",
-    "Flexible scheduling and affordable pricing",
-    "Comprehensive fitness assessment and tracking",
+    "Replaces traditional school PT with engaging, activity-based sports programs",
+    "Sparks early interest and enthusiasm for physical education and sports",
+    "98% of children identify “FUN” as the key factor in Sports Educate programs",
+    "Engages every child through high-quality physical education, improving overall fitness",
+    "Builds strong fundamentals through age-appropriate sports activities",
+    "Integrates fun, inclusive, and comprehensive physical education into school curriculums",
+    "Shapes healthy, active, confident, and successful students for the future",
   ];
 
   return (
@@ -255,13 +256,13 @@ const WhyChooseUsSection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full bg-background/20 text-background text-sm font-semibold mb-4">
-              Why SportElite?
+              Why choose us?
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background leading-tight mb-6">
-              Empowering Schools, Building Champions
+              Making Physical Education Fun, Effective, and Impactful
             </h1>
-            <p className="text-xl text-background/80 mb-8 max-w-2xl">
-              Sports Educate Foundation collaborates with schools to implement best-in-class physical education programs that enhance children's fitness, academic performance, and overall development.
+            <p className="text-xl text-background/80 mb-8 max-w-2xl text-justify">
+              Sports Educate bridges the gap in traditional physical education by introducing fun-filled, structured physical activities at an early age, nurturing lifelong interest in sports and fitness among children.
             </p>
 
             <ul className="space-y-4">
@@ -275,7 +276,7 @@ const WhyChooseUsSection = () => {
                   className="flex items-center gap-3 text-background"
                 >
                   <CheckCircle className="h-5 w-5 text-accent shrink-0" />
-                  <span>{reason}</span>
+                  <span className="text-justify">{reason}</span>
                 </motion.li>
               ))}
             </ul>
