@@ -70,7 +70,7 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-background/80 mb-10 max-w-xl"
+          className="text-lg md:text-xl text-background/80 mb-10 max-w-xl text-justify"
         >
           Sports Educate Foundation collaborates with schools to implement best-in-class physical education programs that enhance children's fitness, academic performance, and overall development.
         </motion.p>
