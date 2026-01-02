@@ -9,7 +9,7 @@ import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import heroImage from "@/assets/hero-sports.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "@/assets/program1.png";
 import gallery2 from "@/assets/gallery-2.jpg";
 import coach1 from "@/assets/coach-1.jpg";
 import coach2 from "@/assets/coach-2.jpg";

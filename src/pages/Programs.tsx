@@ -6,6 +6,12 @@ import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
+import subprogram1 from "@/assets/subprogram1.png";
+import subprogram2 from "@/assets/subprogram2.png";
+import subprogram3 from "@/assets/subprogram3.png";
+import subprogram4 from "@/assets/subprogram4.png";
+import program2 from "@/assets/program2.png";
+import subprogram5 from "@/assets/subprogram5.png";
 
 const physicalEducationPrograms = [
   {
@@ -13,28 +19,28 @@ const physicalEducationPrograms = [
     ageGroup: "KG - Class 2",
     description: "The Sports Educate Physical Education Program for grades Kindergarten-Class 2 offers instruction and practice in a realistic number of diverse skills and activities appropriate for kindergarten through second-grade children. The curriculum is designed to introduce standard-based, developmentally appropriate activities without overwhelming students and to encourage maximum participation during class time. Active participation and practice in a positive, non-threatening atmosphere are the means for improving children's physical skills, fitness, social skills, and personal enjoyment.",
     features: ["Body and spatial awareness", "Locomotor and non-locomotor skills", "Pathways, levels and tempo", "Balance and manipulation", "Flexibility and strength"],
-    image: gallery1,
+    image: subprogram1,
   },
   {
     name: "Sports Starters Program",
     ageGroup: "Class 3 - 5",
     description: "A Sports Starters Program is designed to introduce kids to various sports, promoting physical activity, teamwork, and skill development. These programs typically cater to young kids (Class 3 - Class 5) and focus on fun, engagement, and foundational skills.",
     features: ["Multi-sport exposure", "Team building activities", "Foundational skill development", "Fun and engaging approach"],
-    image: gallery2,
+    image: subprogram2,
   },
   {
     name: "Ignite Sports Development Program",
     ageGroup: "Class 6 - 8",
     description: "Ignite Sports Development Program is a high-energy initiative focusing on intensive training with expert coaching in specific sports, skill enhancement for improving techniques and performance, fitness and conditioning for building strength, speed, and agility, and competitive exposure through matches, tournaments, and events.",
     features: ["Intensive training", "Expert coaching", "Fitness and conditioning", "Competitive exposure"],
-    image: gallery1,
+    image: subprogram3,
   },
   {
     name: "Peak Performance Program",
     ageGroup: "Class 9 - 12",
     description: "Peak Sports Performance Program is a high-performance initiative focusing on advanced training with expert coaching for elite athletes, customized plans for tailored fitness and skill development, mental preparation techniques for focus and pressure handling, nutrition and recovery for optimizing performance, and competition readiness for preparing top-level events.",
     features: ["Advanced training", "Customized plans", "Mental preparation", "Nutrition and recovery", "Competition readiness"],
-    image: gallery2,
+    image: subprogram4,
   },
 ];
 
@@ -44,14 +50,14 @@ const sportsPrograms = [
     ageGroup: "All Age Groups",
     description: "Sports Educate Foundation Sports program covers all sports starting from Football, Cricket, Tennis, Baseball, Basketball, Rugby, Frisbee, Volleyball etc. The program is developed specifically to impart coaching across multiple age groups. Sports Educate provide coaching from basic to intermediate and advance level.",
     features: ["Multi-sport coverage", "All age groups", "Basic to advanced coaching", "Professional training"],
-    image: gallery1,
+    image: program2,
   },
   {
     name: "After School Coaching Program",
     ageGroup: "KG - Middle School",
     description: "The Sports Educate Foundation After-School Sports programs in elementary and middle schools help children stay active, learn a variety of sports, and understand teamwork and personal responsibility. Our programs range from introductory sports for kindergartners to varsity teams in middle schools. We offer a wide variety of sports and enrichment activities for every age group. With our After-School programs, parents and schools can be confident that children are learning and playing in a safe and supportive environment.",
     features: ["Safe environment", "Teamwork development", "Personal responsibility", "Age-appropriate activities", "Wide variety of sports"],
-    image: gallery2,
+    image: subprogram5,
   },
 ];
 
