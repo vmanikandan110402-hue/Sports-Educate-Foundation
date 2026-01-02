@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Heart, Users, Award, Clock, CheckCircle } from "lucide-react";
+import { Target, Heart, Users, Award, Clock, CheckCircle, BookOpen, GraduationCap, Handshake } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import heroImage from "@/assets/hero-sports.jpg";
@@ -14,18 +14,14 @@ const fadeInUp = {
 
 const About = () => {
   const values = [
-    { icon: Target, title: "Discipline", desc: "Building mental toughness and commitment in every athlete" },
-    { icon: Heart, title: "Passion", desc: "Fueling the love for sports and continuous improvement" },
-    { icon: Users, title: "Teamwork", desc: "Fostering collaboration and mutual support among athletes" },
-    { icon: Award, title: "Excellence", desc: "Striving for the highest standards in everything we do" },
+    { icon: BookOpen, title: "Child Development", desc: "Focusing on holistic growth through age-appropriate physical education" },
+    { icon: GraduationCap, title: "Quality Education", desc: "Delivering best-in-class PE programs that enhance student learning and fitness" },
+    { icon: Handshake, title: "School Partnership", desc: "Collaborating with schools to implement comprehensive sports education" },
+    { icon: Award, title: "Excellence", desc: "Maintaining high standards in curriculum, training, and program delivery" },
   ];
 
   const timeline = [
-    { year: "2009", title: "Foundation", desc: "SportElite Academy was established with a vision to create world-class athletes" },
-    { year: "2012", title: "First Championship", desc: "Our athletes won their first national championship, marking our arrival" },
-    { year: "2016", title: "Facility Expansion", desc: "Opened state-of-the-art training facilities across multiple locations" },
-    { year: "2020", title: "International Recognition", desc: "Partnered with international sports organizations and expanded globally" },
-    { year: "2024", title: "5000+ Champions", desc: "Celebrating over 5000 athletes trained and multiple championships won" },
+    { year: "2026", title: "Foundation", desc: "Sports Educate Foundation established with a vision to revolutionize physical education in schools" },
   ];
 
   return (
