@@ -345,10 +345,10 @@ const WhyChooseUsSection = () => {
 // Stats Section
 const StatsSection = () => {
   const stats = [
-    { value: 5000, suffix: "+", label: "Athletes Trained" },
-    { value: 150, suffix: "+", label: "Championships Won" },
-    { value: 50, suffix: "+", label: "Expert Coaches" },
-    { value: 15, suffix: "", label: "Years of Excellence" },
+    { value: 50, suffix: "+", label: "Schools Partnered" },
+    { value: 5000, suffix: "+", label: "Students Impacted" },
+    { value: 100, suffix: "%", label: "Program Satisfaction" },
+    { value: 25, suffix: "+", label: "Certified Educators" },
   ];
 
   return (
@@ -383,16 +383,18 @@ const StatsSection = () => {
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "SportElite transformed my game completely. The coaches here understand what it takes to become a champion.",
-      author: "Michael Chen",
-      role: "Professional Football Player",
+      quote: "Sports Educate Foundation's PE programs have significantly improved our students' physical fitness and overall development. The curriculum is well-structured and age-appropriate.",
+      author: "Principal Kumar",
+      role: "School Principal",
       image: coach1,
+      initials: "PK",
     },
     {
-      quote: "The training methodology and personalized approach helped me achieve results I never thought possible.",
-      author: "Sarah Williams",
-      role: "National Basketball Team",
+      quote: "The professional development and support provided by Sports Educate has helped our teachers deliver quality physical education effectively.",
+      author: "Mrs. Lakshmi",
+      role: "Physical Education Teacher",
       image: coach2,
+      initials: "ML",
     },
   ];
 
@@ -401,8 +403,8 @@ const TestimonialsSection = () => {
       <div className="container-wide">
         <SectionHeader
           badge="Testimonials"
-          title="What Our Athletes Say"
-          subtitle="Hear from champions who have trained with us"
+          title="What Our Partners Say"
+          subtitle="Hear from schools and educators who work with us"
         />
 
         <motion.div
@@ -427,11 +429,9 @@ const TestimonialsSection = () => {
                 "{testimonial.quote}"
               </blockquote>
               <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.author}
-                  className="w-14 h-14 rounded-full object-cover"
-                />
+                <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center">
+                  <span className="text-lg font-bold text-primary">{testimonial.initials}</span>
+                </div>
                 <div>
                   <div className="font-semibold text-foreground">{testimonial.author}</div>
                   <div className="text-sm text-muted-foreground">{testimonial.role}</div>

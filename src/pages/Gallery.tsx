@@ -2,28 +2,37 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import Layout from "@/components/Layout";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import heroImage from "@/assets/hero-sports.jpg";
-import coach1 from "@/assets/coach-1.jpg";
-import coach2 from "@/assets/coach-2.jpg";
-import coach3 from "@/assets/coach-3.jpg";
+import image1 from "@/assets/image1.jpeg";
+import image2 from "@/assets/image2.jpeg";
+import image3 from "@/assets/image3.jpeg";
+import image4 from "@/assets/image4.jpeg";
+import image5 from "@/assets/image5.jpeg";
+import image6 from "@/assets/image6.jpeg";
+import image7 from "@/assets/image7.jpeg";
+import image8 from "@/assets/image8.jpeg";
+import image9 from "@/assets/image9.jpeg";
+import image10 from "@/assets/image10.jpeg";
+import image11 from "@/assets/image11.jpeg";
+import image12 from "@/assets/image12.jpeg";
+import image13 from "@/assets/image13.jpeg";
+import image14 from "@/assets/image14.jpeg";
+
 
 const images = [
-  { src: gallery1, category: "School Programs", title: "PE Class in Action" },
-  { src: gallery2, category: "Teacher Training", title: "Educators Workshop" },
-  { src: gallery3, category: "Student Activities", title: "Fitness Assessment" },
-  { src: gallery4, category: "School Events", title: "Inter-School Competition" },
-  { src: heroImage, category: "School Programs", title: "Team Building Activities" },
-  { src: coach1, category: "Teacher Training", title: "Professional Development" },
-  { src: coach2, category: "Student Activities", title: "After-School Sports" },
-  { src: coach3, category: "Teacher Training", title: "Curriculum Planning" },
-  { src: gallery1, category: "School Events", title: "Annual Sports Day" },
-  { src: gallery2, category: "Student Activities", title: "Multi-Sport Exposure" },
-  { src: gallery3, category: "School Programs", title: "Physical Education Class" },
-  { src: gallery4, category: "School Events", title: "Championship Ceremony" },
+  { src: image1, category: "School Programs", title: "Physical Education Class" },
+  { src: image2, category: "Teacher Training", title: "Educator Development" },
+  { src: image3, category: "Student Activities", title: "Sports Training" },
+  { src: image4, category: "School Events", title: "Annual Sports Day" },
+  { src: image5, category: "School Programs", title: "Fitness Activities" },
+  { src: image6, category: "Teacher Training", title: "Workshop Session" },
+  { src: image7, category: "Student Activities", title: "Team Sports" },
+  { src: image8, category: "School Events", title: "Competition" },
+  { src: image9, category: "School Programs", title: "PE Curriculum" },
+  { src: image10, category: "Teacher Training", title: "Professional Training" },
+  { src: image11, category: "Student Activities", title: "Outdoor Activities" },
+  { src: image12, category: "School Events", title: "Inter-School Meet" },
+  { src: image13, category: "School Programs", title: "Fitness Assessment" },
+  { src: image14, category: "Teacher Training", title: "Certification Program" },
 ];
 
 const categories = ["All", "School Programs", "Teacher Training", "Student Activities", "School Events"];
