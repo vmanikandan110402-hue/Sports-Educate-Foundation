@@ -13,6 +13,8 @@ import gallery1 from "@/assets/program1.png";
 import gallery2 from "@/assets/gallery-2.jpg";
 import coach1 from "@/assets/coach-1.jpg";
 import coach2 from "@/assets/coach-2.jpg";
+import found1 from "@/assets/found1.png";
+import found2 from "@/assets/found2.png";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -314,12 +316,12 @@ const WhyChooseUsSection = () => {
           >
             <div className="grid grid-cols-2 gap-4">
               <img
-                src={coach1}
+                src={found1}
                 alt="Expert coach"
                 className="w-full h-64 object-cover rounded-2xl"
               />
               <img
-                src={coach2}
+                src={found2}
                 alt="Professional trainer"
                 className="w-full h-64 object-cover rounded-2xl mt-8"
               />

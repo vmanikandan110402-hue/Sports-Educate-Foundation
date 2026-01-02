@@ -3,8 +3,8 @@ import { Target, Heart, Users, Award, Clock, CheckCircle, BookOpen, GraduationCa
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import heroImage from "@/assets/hero-sports.jpg";
-import coach1 from "@/assets/coach-1.jpg";
-import coach2 from "@/assets/coach-2.jpg";
+import coach1 from "@/assets/pt1.png";
+import coach2 from "@/assets/pt2.png";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
