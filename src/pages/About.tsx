@@ -61,8 +61,8 @@ const About = () => {
                 className="rounded-2xl w-full h-[400px] object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-primary p-6 rounded-2xl">
-                <div className="text-4xl font-bold text-primary-foreground">15+</div>
-                <div className="text-primary-foreground/80 text-sm">Years of Excellence</div>
+                <div className="text-4xl font-bold text-primary-foreground">Founded 2026</div>
+                <div className="text-primary-foreground/80 text-sm">Revolutionizing Physical Education</div>
               </div>
             </motion.div>
           </div>
