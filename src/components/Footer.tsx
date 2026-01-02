@@ -15,8 +15,8 @@ const Footer = () => {
               <span className="text-xl font-bold tracking-tight">Sports Educate Foundation</span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
-              Transforming lives through sports. Empowering athletes to reach their full potential 
-              through world-class training and expert coaching.
+              Revolutionizing physical education in schools. Empowering children through 
+              age-appropriate sports programs that enhance fitness, development, and academic excellence.
             </p>
             <div className="flex gap-3">
               {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
@@ -35,16 +35,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {["About Us", "Programs", "Coaches", "Gallery", "Events", "Contact"].map((link) => (
-                <li key={link}>
-                  <Link
-                    to={`/${link.toLowerCase().replace(" ", "-")}`}
-                    className="text-background/70 hover:text-primary transition-colors text-sm"
-                  >
-                    {link}
-                  </Link>
-                </li>
-              ))}
+              <li><Link to="/about" className="text-background/70 hover:text-primary transition-colors text-sm">About Us</Link></li>
+              <li><Link to="/programs" className="text-background/70 hover:text-primary transition-colors text-sm">Programs</Link></li>
+              <li><Link to="/gallery" className="text-background/70 hover:text-primary transition-colors text-sm">Gallery</Link></li>
+              <li><Link to="/events" className="text-background/70 hover:text-primary transition-colors text-sm">Events</Link></li>
+              <li><Link to="/contact" className="text-background/70 hover:text-primary transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
 
@@ -52,7 +47,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-6">Our Programs</h4>
             <ul className="space-y-3">
-              {["Football Training", "Basketball Academy", "Cricket Coaching", "Fitness & Gym", "Swimming", "Athletics"].map((program) => (
+              {["Physical Education Program", "Sports Program", "After School Coaching", "Movement Mastery", "Sports Starters"].map((program) => (
                 <li key={program}>
                   <Link
                     to="/programs"
