@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { 
   Trophy, Target, Users, Dumbbell, Medal, Calendar, 
-  ArrowRight, Star, CheckCircle, Play
+  ArrowRight, Star, CheckCircle, Play, BookOpen, Shield, FileText, Truck
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
@@ -133,21 +133,28 @@ const HeroSection = () => (
 // Highlights Section
 const HighlightsSection = () => {
   const highlights = [
-    { icon: Target, title: "Expert Training", desc: "Personalized programs designed by certified professionals" },
-    { icon: Users, title: "Elite Coaches", desc: "Learn from former athletes and industry experts" },
-    { icon: Dumbbell, title: "Modern Facilities", desc: "State-of-the-art equipment and training grounds" },
-    { icon: Medal, title: "Proven Results", desc: "Track record of championship-winning athletes" },
+    { icon: BookOpen, title: "Age appropriate Sports & Physical education Curriculum", desc: "Comprehensive curriculum designed for different age groups and skill levels" },
+    { icon: Dumbbell, title: "Age Appropriate Equipments & Props", desc: "Safe and suitable equipment specifically designed for children's physical development" },
+    { icon: Shield, title: "Certified and well Trained Sports educator", desc: "Professional educators with proper certification and extensive training experience" },
+    { icon: Calendar, title: "School sports Events support", desc: "Complete support for organizing and managing school sports events and competitions" },
+    { icon: FileText, title: "Periodical Reports", desc: "Regular progress reports tracking student development and performance metrics" },
+    { icon: Truck, title: "Delivery and Quality checking", desc: "Ensuring high-quality delivery and regular quality assurance checks" },
   ];
 
   return (
     <section className="section-padding bg-muted">
       <div className="container-wide">
+        <SectionHeader
+          badge="Our Services"
+          title="What We Offer"
+          subtitle="Comprehensive sports education solutions for schools"
+        />
         <motion.div
           variants={stagger}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {highlights.map((item, i) => (
             <motion.div
