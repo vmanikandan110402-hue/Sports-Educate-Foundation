@@ -178,9 +178,8 @@ const HighlightsSection = () => {
 // Programs Preview Section
 const ProgramsSection = () => {
   const programs = [
-    { name: "Football", level: "All Levels", image: gallery1, color: "from-green-500" },
-    { name: "Basketball", level: "Beginner to Pro", image: gallery2, color: "from-orange-500" },
-    { name: "Fitness Training", level: "All Ages", image: heroImage, color: "from-blue-500" },
+    { name: "Physical Education Program", level: "KG - Class 12", image: gallery1, color: "from-green-500" },
+    { name: "Sports Program", level: "All Age Groups", image: gallery2, color: "from-orange-500" },
   ];
 
   return (
@@ -188,8 +187,8 @@ const ProgramsSection = () => {
       <div className="container-wide">
         <SectionHeader
           badge="Our Programs"
-          title="Train Like a Champion"
-          subtitle="Discover our comprehensive range of sports programs designed for athletes at every level"
+          title="Comprehensive Sports Education"
+          subtitle="Age-appropriate physical education and sports programs for schools from KG through Class 12"
         />
 
         <motion.div
@@ -197,29 +196,30 @@ const ProgramsSection = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {programs.map((program, i) => (
-            <motion.div
-              key={i}
-              variants={fadeInUp}
-              className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer"
-            >
-              <img
-                src={program.image}
-                alt={program.name}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className={`absolute inset-0 bg-gradient-to-t ${program.color}/60 to-transparent opacity-80`} />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-8">
-                <span className="text-sm text-background/70 font-medium">{program.level}</span>
-                <h3 className="text-2xl font-bold text-background mt-1">{program.name}</h3>
-                <div className="mt-4 flex items-center gap-2 text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                  Learn More <ArrowRight className="h-4 w-4" />
+            <Link key={i} to="/programs">
+              <motion.div
+                variants={fadeInUp}
+                className="group relative h-[400px] rounded-2xl overflow-hidden cursor-pointer"
+              >
+                <img
+                  src={program.image}
+                  alt={program.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className={`absolute inset-0 bg-gradient-to-t ${program.color}/60 to-transparent opacity-80`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <span className="text-sm text-background/70 font-medium">{program.level}</span>
+                  <h3 className="text-2xl font-bold text-background mt-1">{program.name}</h3>
+                  <div className="mt-4 flex items-center gap-2 text-primary font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                    Learn More <ArrowRight className="h-4 w-4" />
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </motion.div>
 
