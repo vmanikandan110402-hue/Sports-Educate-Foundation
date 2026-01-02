@@ -81,9 +81,7 @@ const About = () => {
             >
               <h3 className="text-2xl font-bold text-primary-foreground mb-4">Our Mission</h3>
               <p className="text-primary-foreground/80 leading-relaxed">
-                To empower athletes of all ages and skill levels to reach their full potential 
-                through innovative training programs, expert coaching, and a supportive community 
-                that celebrates dedication, discipline, and achievement.
+                We strive to improve the health of children and adolescents by disseminating evidence-based physical activity and sports programs. Our initiatives provide comprehensive curriculum, Certified sports educator , Age Appropriate Equipments and follow-up support,  from preschool to grade 12. We believe in fostering a positive working environment that values professional growth, upward mobility, and opportunities for individuals to work towards common goals.
               </p>
             </motion.div>
 
@@ -96,9 +94,7 @@ const About = () => {
             >
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To become the world's most respected sports academy, known for producing 
-                not just exceptional athletes, but well-rounded individuals who embody 
-                the values of sportsmanship, integrity, and lifelong commitment to excellence.
+                Sports educate foundation  Aim to be India’s Admirable Physical Education and Sports Organization. Sports educate is dedicated to creating, implementing, and evaluating research-based programs that promote lifelong wellness. Sports educate is committed to outstanding customer satisfaction through timely delivery and exceptional service.
               </p>
             </motion.div>
           </div>
