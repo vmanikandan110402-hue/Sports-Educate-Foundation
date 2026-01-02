@@ -4,9 +4,11 @@ import { Mail, Phone, MapPin, Clock, Send, Facebook, Twitter, Instagram, Youtube
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import Layout from "@/components/Layout";
+import { sendEmail } from "@/services/emailjs";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,13 +17,35 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const success = await sendEmail(formData);
+      
+      if (success) {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "Thank you for contacting us. We'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        toast({
+          title: "Failed to Send Message",
+          description: "There was an error sending your message. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "An unexpected error occurred. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -163,8 +187,18 @@ const Contact = () => {
                   variant="accent"
                   size="xl"
                   className="w-full"
+                  disabled={isSubmitting}
                 >
-                  Send Message <Send className="h-5 w-5" />
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin mr-2" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message <Send className="h-5 w-5" />
+                    </>
+                  )}
                 </Button>
               </form>
             </motion.div>
