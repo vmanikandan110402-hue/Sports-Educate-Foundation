@@ -43,7 +43,7 @@ const HeroSection = () => (
 
     {/* Content */}
     <div className="relative z-10 container-wide pt-32 pb-20">
-      <div className="max-w-3xl">
+      <div className="max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,8 +69,20 @@ const HeroSection = () => (
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="text-base md:text-lg text-background/70 mb-8 max-w-2xl text-justify"
+        >
+          Sports Educate Foundation aims to be India's Admirable Physical Education and Sports Organization. 
+          Sports Educate is dedicated to creating, implementing, and evaluating research-based programs that 
+          promote lifelong wellness. Sports Educate is committed to outstanding customer satisfaction through 
+          timely delivery and exceptional service.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-background/80 mb-10 max-w-xl text-justify"
+          className="text-base md:text-lg text-background/70 mb-8 max-w-2xl text-justify"
         >
           Sports Educate Foundation collaborates with schools to implement best-in-class physical education programs that enhance children's fitness, academic performance, and overall development.
         </motion.p>
@@ -79,7 +91,7 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap gap-4"
+          className="flex flex-col sm:flex-col-reverse gap-4 sm:flex-row sm:gap-4"
         >
           <Button variant="hero" asChild>
             <Link to="/programs">
@@ -96,7 +108,7 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 grid grid-cols-3 gap-8 max-w-lg"
+          className="mt-16 grid grid-cols-3 gap-8 max-w-lg hidden"
         >
           {[
             { value: "15+", label: "Years Experience" },
