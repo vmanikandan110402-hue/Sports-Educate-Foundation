@@ -354,7 +354,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-foreground">
+    <section className="py-20 bg-foreground hidden">
       <div className="container-wide">
         <motion.div
           variants={stagger}
